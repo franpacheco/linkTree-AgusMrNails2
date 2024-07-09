@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: url(../img/agus1_fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* COMMONS */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* header */
+section.header img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* LINKS */
+section.links .link-item {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+section.links .link-item a {
+    display: block;
+    width: 100%;
+    border: 1px #000 solid;
+    padding: 16px 0;
+    text-align: center;
+    color: #000;
+    border-radius: 180px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+    background-color: rgb(249, 27, 157);
+}
+
+section.links .link-item a:hover {
+    animation: shake 0.3s infinite;
+    background: rgb(255, 109, 194);
+    color: white;
+    box-shadow: 0 0 1rem rgb(248, 128, 198);
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* Para pantallas más pequeñas (smartphones en modo retrato) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    section {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    section.links .link-item a {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+
+    footer .footer-text {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Para tablets y dispositivos móviles en modo paisaje */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    section.links .link-item a {
+        padding: 14px 0;
+        font-size: 16px;
+    }
+
+    footer .footer-text {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Para dispositivos más grandes (laptops y desktops) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        max-width: 600px;
+    }
+
+    section.links .link-item a {
+        padding: 16px 0;
+        font-size: 18px;
+    }
+
+    footer .footer-text {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
