@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&display=swap');
 
 :root {
     --Rosa: #d98ca3;
+    --RosaClaro: #f8c6df;
+    --Fucsia: #e81e74;
     --Azul: #25687d;
-    --Fondo: #f4e96a;
+    --Fondo: #fef8ba;
 }
 
 body {
@@ -17,15 +17,12 @@ body {
     padding: 0;
 }
 
-
-
 a {
     text-decoration: none;
 }
 
 /* COMMONS */
 section {
-    font-family: "Rock Salt", cursive;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,10 +32,12 @@ section {
 }
 
 section.header h1 {
-        font-family: "Alumni Sans Inline One", sans-serif;
-        font-style: normal;
-        font-size: 50px;
-        margin-top: 10px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 10px;
 }
 
 footer {
@@ -74,6 +73,14 @@ section.links .link-item a {
     border-radius: 180px;
     box-shadow: 4px 4px rgb(0, 0, 0);
     background-color: var(--Rosa);
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px !important; /* Incrementa el tamaño de la fuente y usa !important */
+}
+
+section.links .link-item a span {
+    font-size: 24px !important; /* Incrementa el tamaño de la fuente del texto del span */
 }
 
 section.links .link-item a:hover {
@@ -116,7 +123,7 @@ section.links .link-item a:hover {
 
     section.links .link-item a {
         padding: 12px 0;
-        font-size: 14px;
+        font-size: 20px !important; /* Ajuste para pantallas pequeñas */
     }
 
     footer .footer-text {
@@ -138,7 +145,7 @@ section.links .link-item a:hover {
 
     section.links .link-item a {
         padding: 14px 0;
-        font-size: 16px;
+        font-size: 22px !important; /* Ajuste para tablets */
     }
 
     footer .footer-text {
@@ -160,7 +167,7 @@ section.links .link-item a:hover {
 
     section.links .link-item a {
         padding: 16px 0;
-        font-size: 18px;
+        font-size: 24px !important; /* Ajuste para dispositivos grandes */
     }
 
     footer .footer-text {
